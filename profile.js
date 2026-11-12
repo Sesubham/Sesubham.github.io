@@ -5,6 +5,5 @@ window.PORTFOLIO_PROFILE = {
   bio: "Write a short introduction about yourself, what you build, and what you are learning.",
   github: "https://github.com/Sesubham",
   location: "India",
-  email: "",
-  website: ""
+  email: "subhamsekhar199@gmail.com"
 };
