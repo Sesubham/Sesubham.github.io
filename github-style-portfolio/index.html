@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Portfolio home">
+      <span class="github-mark">●</span><span>Developer Portfolio</span>
+    </a>
+    <nav><a href="#repositories">Repositories</a><a href="#about">About</a><a id="github-nav" href="#" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  </header>
+
+  <main class="layout">
+    <aside class="profile" id="about">
+      <div class="avatar" id="avatar">?</div>
+      <h1 id="name">Your Name</h1>
+      <p class="username" id="username">@your-username</p>
+      <p id="bio" class="bio">Your short developer bio goes here. Edit profile.js to personalize this portfolio.</p>
+      <a class="github-button" id="github-button" href="#" target="_blank" rel="noreferrer">View GitHub profile</a>
+      <div class="profile-meta"><span>◉</span><span id="location">Your location</span></div>
+      <div class="profile-meta"><span>✉</span><span id="email">Add your email in profile.js</span></div>
+      <div class="profile-meta"><span>🔗</span><a id="website" href="#" target="_blank" rel="noreferrer">Personal website</a></div>
+      <div class="profile-note">This portfolio is intentionally empty until you add your own projects.</div>
+    </aside>
+
+    <section class="content">
+      <div class="page-heading">
+        <div><p class="eyebrow">PORTFOLIO / REPOSITORIES</p><h2 id="repo-heading">Repositories</h2></div>
+        <span class="repo-count" id="repo-count">0 repositories</span>
+      </div>
+      <div class="toolbar">
+        <label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Find a repository..." aria-label="Find a repository"></label>
+        <select id="language-filter" aria-label="Filter by technology"><option value="">All technologies</option></select>
+      </div>
+      <div id="project-list" class="project-list" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon">⌘</div>
+        <h3>No projects added yet</h3>
+        <p>Your repository list is ready. Add your own projects in <code>projects.js</code> and they will appear here.</p>
+        <a class="subtle-link" href="PROJECT-README-TEMPLATE.md">View the project README template →</a>
+      </div>
+      <footer>Built with care · Hosted with GitHub Pages</footer>
+    </section>
+  </main>
+  <script src="profile.js"></script>
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
